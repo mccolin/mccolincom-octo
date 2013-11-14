@@ -1,0 +1,23 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+<!DOCTYPE HTML>
+{% if site.lang %}
+<html lang="{{ site.lang }}">
+{% else %}
+<html>
+{% endif %}
+{% include head.html %}
+<body>
+
+  <header id="mast">
+    {% include mast.html %}
+  </header>
+
+  <div id="content-container">
+    {{ content | expand_urls: root_url }}
+    <footer id="footer">
+      {% include footer.html %}
+    </footer>
+  </div>
+
+</body>
+</html>

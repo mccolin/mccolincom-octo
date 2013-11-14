@@ -1,0 +1,37 @@
+//
+// McCOLIN
+// Base Stylesheet
+//
+
+/** COLORS * COLORS * COLORS * COLORS * COLORS * COLORS * COLORS * COLORS * COLORS **/
+
+$color-white: #fff;
+$color-greyblue: #bbc;
+$color-highlight: #ffd700;
+
+$color-mast-bg: $color-greyblue;
+$color-content-bg: $color-white;
+$color-link: #0a0;
+$color-link-hover: #00a;
+
+
+/** FONTS * FONTS * FONTS * FONTS * FONTS * FONTS * FONTS * FONTS * FONTS * FONTS * FONTS **/
+
+$font-default: Arimo, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-heading: Rokkitt, Calibri, "Courier New";
+$font-mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+
+$font-icon: FontAwesome;
+$font-icon-path: "/fonts/fontawesome-webfont";
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$font-icon-path}.eot');
+  src: url('#{$font-icon-path}.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-icon-path}.woff') format('woff'),
+    url('#{$font-icon-path}.ttf') format('truetype'),
+    url('#{$font-icon-path}.svgz#FontAwesomeRegular') format('svg'),
+    url('#{$font-icon-path}.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
