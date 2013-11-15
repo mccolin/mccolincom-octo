@@ -1,11 +1,7 @@
-<h1 class="site-title">This is Colin McCloskey.</h1>
-<h2 class="site-subtitle">He's pretty cool.</h2>
-<p id="powered-by">
-  Colin McCloskey is powered by lots of things, among them the funny voice he uses to talk to dogs.
-  This website is powered by his wit, web servers of some variety, and a hackers' blogging engine.
-</p>
+<h1 class="site-title">{% if site.title %}{{ site.title }}{% else %}This is Colin McCloskey{% endif %}</h1>
+<h2 class="site-subtitle">{% if site.subtitle %}{{ site.subtitle }}{% else %}He's pretty cool.{% endif %}</h2>
 <nav id="major-nav">
-  <a href="#">About</a>
-  <a href="#">Blog</a>
-  <a href="#">Hire</a>
+  <a href="/">Blog</a>
+  <a href="/about">About</a>
+  <a href="/hire">Hire</a>
 </nav>
