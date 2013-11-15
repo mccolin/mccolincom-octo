@@ -64,6 +64,13 @@ a:hover {
   }
 }
 
+#mast .site-title, #mast .site-subtitle {
+  @media #{$large-media} {
+    display: none;
+  }
+}
+
+
 #major-nav {
   @media #{$large-media} {
     padding: 0 10px;
@@ -117,6 +124,11 @@ h2 {
   margin: 0 auto 1em;
 }
 
+#content-container .site-title, #content-container .site-subtitle {
+  @media #{$small-media} {
+    display: none;
+  }
+}
 
 
 /** FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER **/
