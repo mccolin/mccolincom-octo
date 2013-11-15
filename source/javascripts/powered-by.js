@@ -17,11 +17,12 @@ function setPoweredBy(powBy) {
     var powers = [
       "Diet Pepsi",
       "the funny voice he uses to talk to dogs",
+      "Arnold Palmers",
       "the love of his life, <a href=\"http://thebluesunshine.com/\">Lizza</a>",
       "Cliff Lee's throwing motion",
-      "his sweet tooth for Nerds rope",
+      "prodigious snacking on Kit Kat bars",
       "any and all types of potatoes",
-      "WaWa Hot to Go bowls, however gross they seem"
+      "the WaWa Gobbler Shorti, whenever seasonally attainable"
     ];
     powBy = powers[ Math.floor(Math.random() * powers.length) ];
   }
@@ -29,38 +30,9 @@ function setPoweredBy(powBy) {
   $("#powered-by span[data-powered-by='colin']").html(powBy);
 }
 
-
-/**
- * Provide a manipulation function that allows themes to change the
- * greeting the site gives you in the header */
-function setSiteGreeting(greeting) {
-  if (greeting)
-    $("#site-greeting").html(greeting);
-}
-
-/**
- * Provide a manipulation function that allows skins/themes to change
- * the photo credit in the very lower right corner of the footer with
- * a name and link to the photo hosted elsewhere on the web */
-function setPhotoCredit(photoName, photoUrl) {
-  $("#photo-credit .name").html(photoName);
-
-  var link = "<a href=\""+photoUrl+"\">SERVICE</a>";
-  if (photoUrl.indexOf("flickr.com") >= 0) link = link.replace("SERVICE","View on Flickr");
-  else {
-    link = link.replace(photoUrl, "http://flickr.com/mccolin");
-    link = link.replace("SERVICE", "View Flickr");
-  }
-
-  $("#photo-credit .url").html(link);
-}
-
-
 /**
  * When the page loads, adjust the object powering Colin McCloskey according
- * to a series of rules and randomizations. Skin Effects, which should be
- * layered into the JS load later, can further change this field */
+ * to a series of rules and randomizations. */
 $(function(){
   setPoweredBy();
-  // setSiteGreeting("Yo!");
 });

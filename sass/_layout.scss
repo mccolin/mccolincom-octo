@@ -127,7 +127,8 @@ a:hover {
   @media #{$small-media} {
     clear: both;
     float: none;
-    width: 100%;
+    margin: auto;
+    width: 90%;
   }
 }
 
@@ -136,7 +137,7 @@ h1 {
   font-size: 48px;
   margin-bottom: 0;
 }
-article > h1 {
+article.post > h1 {
   font-size: 36px;
 }
 h2 {
@@ -174,7 +175,12 @@ footer #powered-by {
   font-size: 12px;
   font-weight: lighter;
   margin: 1em auto 1.5em;
-  width: 50%;
+  @media #{$large-media} {
+    width: 50%;
+  }
+  @media #{$small-media} {
+    width: 80%;
+  }
 }
 
 ul#elsewhere {
