@@ -17,6 +17,10 @@ body {
   font-family: $font-default;
 }
 
+strong {
+  font-weight: 700;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-heading;
   font-weight: $font-heading-weight;
@@ -148,7 +152,20 @@ article.post > h1 {
 h2 {
   color: #444;
   font-size: 28px;
-  margin: 0 auto 1em;
+  margin: 1 auto 0.1em;
+}
+h3 {
+  color: #444;
+  font-size: 20px;
+  margin: 0.75em auto 0.1em;
+}
+
+#content-container ul {
+  margin: 0;
+  padding: 0 2em;
+}
+#content-container ul li {
+
 }
 
 #content-container .site-title, #content-container .site-subtitle {

@@ -16,10 +16,9 @@ function setPoweredBy(powBy) {
   if (!powBy) {
     var powers = [
       "Diet Pepsi",
-      "the funny voice he uses to talk to dogs",
-      "Arnold Palmers",
+      "drinking lots of Arnold Palmers",
       "the love of his life, <a href=\"http://thebluesunshine.com/\">Lizza</a>",
-      "Cliff Lee's throwing motion",
+      "Cliff Lee's repeatable arm slot",
       "prodigious snacking on Kit Kat bars",
       "any and all types of potatoes",
       "the WaWa Gobbler Shorti, whenever seasonally attainable"
